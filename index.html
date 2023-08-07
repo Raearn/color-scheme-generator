@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+
+        <div class="nav-one">
+          <input id="select-color" type="color" value="#a0d2fe">
+          <div class="custom-select">
+              <div class="select-mode"></div>
+              <div class="options">
+                <div class="mode" data-value="monochrome">Monochrome</div>
+                <div class="mode" data-value="monochrome-dark">Monochrome Dark</div>
+                <div class="mode" data-value="monochrome-light">Monochrome Light</div>
+                <div class="mode" data-value="analogic">Analogic</div>
+                <div class="mode" data-value="complement">Complement</div>
+                <div class="mode" data-value="analogic-complement">Analogic Complement</div>
+                <div class="mode" data-value="triad">Triad</div>
+                <div class="mode" data-value="quad">Quad</div>
+              </div>
+            <span class="custom-arrow"></span>
+          </div>
+        </div>
+
+        <button id="get-btn">Get color scheme</button>
+      </nav>
+      <main>
+        <div class="color one"></div>
+        <div class="color two"></div>
+        <div class="color three"></div>
+        <div class="color four"></div>
+        <div class="color five"></div>
+        <span class="hex hex-one">#93CAFB</span>
+        <span class="hex hex-two">#97AFFC</span>
+        <span class="hex hex-three">#A29CFD</span>
+        <span class="hex hex-four">#C2A0FD</span>
+        <span class="hex hex-five">#E0A5FE</span>
+      </main>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
